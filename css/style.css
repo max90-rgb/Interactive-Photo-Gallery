@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0 auto;
+}
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3%;
+}
+input[id="search"]{
+    margin-bottom: 2%;
+    padding: 15px;
+    width: 50%;
+}
+.gallery {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.gallery img {
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+}
+.gallery img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1) rotate(2.5deg);
+}
